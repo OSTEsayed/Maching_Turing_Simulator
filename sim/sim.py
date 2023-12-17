@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter.constants import END, Y
 from tkinter import filedialog as fd
 import time
+import os
 mat=[]
 pon=0
 def start():
@@ -177,7 +178,7 @@ sim = tk.Tk()
 sim.title("Simulateur")
 sim.geometry("600x600+300+100")
 sim.config(background="#38FFAE")
-sim.iconbitmap("2172814.ico")
+sim.iconphoto(False, tk.PhotoImage(file='processing.png'))
 sim.maxsize(600,600)
 sim.minsize(600,600)
 frame1=tk.Frame(sim,background="#38FFAE")
